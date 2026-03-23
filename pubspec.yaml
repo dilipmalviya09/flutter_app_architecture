@@ -1,0 +1,80 @@
+name: flutter_app_architecture
+description: "Feature-Based Clean Architecture with BLoC + AWS Cognito"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^8.1.6
+  bloc: ^8.1.4
+
+  # Functional Programming (Either, Option)
+  dartz: ^0.10.1
+
+  # HTTP Client
+  dio: ^5.7.0
+
+  # Dependency Injection
+  get_it: ^8.0.0
+
+  # Value Equality
+  equatable: ^2.0.5
+
+  # Local Storage (token caching)
+  shared_preferences: ^2.3.4
+
+  # AWS Amplify (uncomment when AWS project is configured)
+#  amplify_flutter: ^2.5.0
+#  amplify_auth_cognito: ^2.5.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # BLoC Testing
+  bloc_test: ^9.1.7
+
+  # Mocking
+  mocktail: ^1.0.4
+
+  # Integration Testing
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your bloc, add an assets section, like this:
+#  assets:
+#    - assets/
+#    - assets/fonts/
+#    - assets/images/png/
+
+#  fonts:
+#    - family: Georgia
+#      fonts:
+#        - asset: assets/fonts/Georgia/Georgia.ttf
+#
+#    - family: Manrope
+#      fonts:
+#        - asset: assets/fonts/Manrope/Manrope-Regular.ttf
+#        - asset: assets/fonts/Manrope/Manrope-Bold.ttf
+#          weight: 700
+#        - asset: assets/fonts/Manrope/Manrope-SemiBold.ttf
+#          weight: 600
+#        - asset: assets/fonts/Manrope/Manrope-Medium.ttf
+#          weight: 500
+#        - asset: assets/fonts/Manrope/Manrope-Light.ttf
+#          weight: 300
+#        - asset: assets/fonts/Manrope/Manrope-ExtraLight.ttf
+#          weight: 200
+#        - asset: assets/fonts/Manrope/Manrope-ExtraBold.ttf
+#          weight: 800
